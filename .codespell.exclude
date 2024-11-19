@@ -4,3 +4,6 @@ planet "Covert"
 planet "Independance"
 	landscape "land/independance"
 # modified planet vi: Essime, Ternituul, Graede, Siedi, Enbye, Sies Upi
+			"te"
+			`As you disembark your ship on the bustling Hai planet, a peculiar sight greets you, a cheerful Hai parcel carrier scurrying towards you, balancing four packages on her arms. She stops in front of you, panting slightly, and with a flick of her arms, the packages land with a soft *thud* at your feet.`
+	"display name" "Fuara Mor"
