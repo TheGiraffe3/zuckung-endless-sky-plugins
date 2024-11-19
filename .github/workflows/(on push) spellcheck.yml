@@ -19,4 +19,4 @@ jobs:
       with:
         path: myplugins/
         exclude_file: .codespell.exclude
-        ignore_words_file: codespell.words.exclude
+        ignore_words_file: .codespell.words.exclude
