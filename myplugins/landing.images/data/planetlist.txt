@@ -425,7 +425,7 @@ planet "Siedi"
 	landscape "land/siedi"
 
 # Gegno Vi(system Nnaug)
-planet "Sies Upi" // codespell:ignore Sies
+planet "Sies Upi"
 	landscape "land/siesupi"
 
 # Gegno Vi(system Ookmya)
@@ -729,8 +729,8 @@ planet "Buccaneer Bay"
 	landscape "land/buccaneerbay"
 
 # Pirate(system Gienah)
-planet "Covert" // codespell:ignore Covert
-	landscape "land/covert" // codespell:ignore covert
+planet "Covert"
+	landscape "land/covert"
 
 # Pirate(system Almach)
 planet "Deadman's Cove"
@@ -1574,8 +1574,8 @@ planet "Ghneoe"
 	landscape "land/ghneoe"
 
 # Uninhabited(system Citadelle)
-planet "Independance" // codespell:ignore Independance
-	landscape "land/independance" // codespell:ignore independance
+planet "Independance"
+	landscape "land/independance"
 
 # Uninhabited(system Lom Tahr)
 planet "Iritoroost"
