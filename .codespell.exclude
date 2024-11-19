@@ -1,0 +1,6 @@
+planet "Sies Upi"
+planet "Covert"
+	landscape "land/covert"
+planet "Independance"
+	landscape "land/independance"
+# modified planet vi: Essime, Ternituul, Graede, Siedi, Enbye, Sies Upi
