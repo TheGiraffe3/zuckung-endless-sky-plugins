@@ -18,4 +18,5 @@ jobs:
     - uses: codespell-project/actions-codespell@master
       with:
         path: myplugins/
-        exclude_file: .codespell.words.exclude
+        exclude_file: .codespell.exclude
+        ignore_words_file: codespell.words.exclude
