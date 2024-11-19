@@ -1,4 +1,4 @@
-# modified planet vi: Essime, Ternituul, Graede, Siedi, Enbye, Sies Upi # codespell:ignore Sies
+# modified planet vi: Essime, Ternituul, Graede, Siedi, Enbye, Sies Upi
 # modified planet scin: Enn Bue , Dueitch Ae, Cipi, Ef Osch, Gue Faur, Oup Je
 # modified planet neutral: Tschyss, Ef Aourtdye, Dueyu Eitch, Iemn Eitch
 # new pirate planet "Bantam"
@@ -18,7 +18,7 @@ planet "Ternituul"
 	"required reputation" 200
 
 # has outfitter
-planet "Sies Upi" # codespell:ignore Sies
+planet "Sies Upi"
 	"required reputation" 240
 
 # has outfitter, shipyard
