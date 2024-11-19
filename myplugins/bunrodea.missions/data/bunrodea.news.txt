@@ -80,7 +80,7 @@ news "bunrodea untranslated"
 			"ga"
 			"gi"
 			"go"
-			"te" # codespell:ignore te
+			"te"
 			"ti"
 			"tu"
 			"ko"
