@@ -14,7 +14,7 @@ jobs:
     steps:
     - name: Download latest continuous
       run: gh release download -R endless-sky/endless-sky continuous -p ${{ env.CONTINUOUS }}
-    - name: Make Endless Sky directory
+    - name: Create endless-sky directory
       run: |
         mkdir endless-sky
     - name: Extract and prepare continuous
@@ -23,14 +23,13 @@ jobs:
         cd .\endless-sky
         mkdir plugins
         cd .\plugins
-        mkdir zuckungplugins
     - uses: actions/checkout@v4
       with:
-        path: '.\endless-sky\plugins\zuckungplugins'
+        path: '.\endless-sky\plugins'
     - name: Move plugins
       run: |
         cd zuckung-endless-sky-plugins
-        mv myplugins/ ../
+        mv myplugins/ ../..
     - name: Parse Datafiles
       run: "'.\\endless-sky\\Endless Sky.exe' -p"
       shell: bash
