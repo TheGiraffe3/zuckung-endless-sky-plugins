@@ -29,7 +29,7 @@ jobs:
     - name: Move plugins
       run: |
         cd zuckung-endless-sky-plugins
-        mv myplugins/ ../..
+        mv myplugins/ .\endless-sky\plugins
     - name: Parse Datafiles
       run: "'.\\endless-sky\\Endless Sky.exe' -p"
       shell: bash
