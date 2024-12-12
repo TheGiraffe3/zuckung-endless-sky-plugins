@@ -14,6 +14,9 @@ jobs:
     steps:
     - name: Download latest continuous
       run: gh release download -R endless-sky/endless-sky continuous -p ${{ env.CONTINUOUS }}
+    - name: Make Endless Sky directory
+      run: |
+        mkdir endless-sky
     - name: Extract and prepare continuous
       run: |
         Expand-Archive ${{ env.CONTINUOUS }} -DestinationPath endless-sky -Force
