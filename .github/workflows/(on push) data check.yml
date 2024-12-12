@@ -26,7 +26,9 @@ jobs:
         path: '.\endless-sky\plugins\zuckungplugins'
     - name: Move plugins
       run: |
-        cd endless-sky-plugins/myplugins
+        ls
+        cd endless-sky-plugins
+        ls
         mv additional.command.buttons/ ../
         mv automata.destruction.0percent/ ../
     - name: Parse Datafiles
