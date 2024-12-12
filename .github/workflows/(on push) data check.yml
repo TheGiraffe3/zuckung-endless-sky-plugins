@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  test-parse:
+    name: Data Files
+    runs-on: windows-2022
+    env:
+      CONTINUOUS: EndlessSky-win64-continuous.zip
+    steps:
+    - name: Download latest continuous
+      run: gh release download -R endless-sky/endless-sky continuous -p ${{ env.CONTINUOUS }}
+    - name: Extract and prepare continuous
+      run: |
+        Expand-Archive ${{ env.CONTINUOUS }} -DestinationPath endless-sky -Force
+        cd .\endless-sky
+        mkdir plugins
+        cd .\plugins
+        mkdir zuckungplugins
+    - uses: actions/checkout@v4
+      with:
+        path: '.\endless-sky\plugins\zuckungplugins'
+    - name: Move plugins
+      run: |
+        cd myplugins
+        mv additional.command.buttons/ ../
+        mv automata.destruction.0percent/ ../
+    - name: Parse Datafiles
+      run: "'.\\endless-sky\\Endless Sky.exe' -p"
+      shell: bash
